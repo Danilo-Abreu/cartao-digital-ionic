@@ -30,9 +30,3 @@ Aplicação desenvolvida utilizando o framework Ionic com o objetivo de criar um
 
 ---
 
-## 🚀 Como executar o projeto
-
-1. Clone o repositório:
-
-```bash
-git clone https://github.com/seu-usuario/seu-repositorio.git
