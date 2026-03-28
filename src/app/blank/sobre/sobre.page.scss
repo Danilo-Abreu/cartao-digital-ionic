@@ -1,0 +1,13 @@
+ion-button {
+  --border-radius: 12px;
+  justify-content: center;
+}
+
+ion-icon {
+  font-size: 1.2rem;
+  vertical-align: middle;
+  color: var(--ion-color-primary);
+}
+ion-content {
+  --background: url('/assets/fundo1.jpg') no-repeat center center / cover;
+}

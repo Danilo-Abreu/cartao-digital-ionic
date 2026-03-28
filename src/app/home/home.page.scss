@@ -1,27 +1,112 @@
-#container {
+
+ion-card {
+  background: url('/assets/fundo1.jpg') no-repeat center / cover;
+  color: white;
   text-align: center;
-
+  padding: 15px;
+  border-radius: 20px;
+  backdrop-filter: blur(5px);
+}
+ion-card:before {
+  content: "";
   position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
+  inset: 0;
+  background: rgba(1, 24, 106, 0.4); // escurece o fundo
+  border-radius: 20px;
 }
 
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
+ion-card * {
+  position: relative;
+  z-index: 1;
 }
 
-#container p {
-  font-size: 16px;
-  line-height: 22px;
+.profile-img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
 
-  color: #8c8c8c;
+  /* AJUSTE AQUI 👇 */
+  object-position: 50% 10%;
 
-  margin: 0;
+  margin: 10px auto;
+  border: 2px solid rgba(255,255,255,0.6);
+}
+.faculdade {
+  margin-top: 12px;
+  text-align: center;
+  font-size: 0.9rem;
+  opacity: 0.8;
+  letter-spacing: 1px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-#container a {
-  text-decoration: none;
+.logo {
+  width: 40px;
+  margin-bottom: 5px;
+  background: white;
+  padding: 4px;
+  border-radius: 6px;
 }
+
+ion-content {
+  --background: url('/assets/fundo1.jpg') no-repeat center center / cover;
+}
+.name {
+  color: white;
+  font-size: 1.5em;
+  font-weight: bold;
+  text-align: center;
+  margin: 10px 0;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.info-container {
+  margin-top: 15px;
+}
+
+.info-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.info-item span:first-child {
+  font-weight: bold;
+}
+.course {
+  font-size: 1.4em;
+  color: white;
+  font-weight: bold;
+  margin: 10px 0;
+  display: block;
+  text-align: center;
+}
+
+.class {
+  font-size: 1.1em;
+  margin: 8px 0;
+  display: block;
+  text-align: center;
+}
+
+.shift {
+  font-size: 1em;
+  color: rgba(255, 255, 255, 0.8);
+  margin: 8px 0;
+  display: block;
+  text-align: center;
+}
+
+ion-icon {
+  font-size: 1.2em;
+}
+ion-button {
+  --border-radius: 10px;
+  justify-content: center;
+}
+
